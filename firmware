@@ -1,0 +1,9 @@
+temizle
+echo "Firmware Son Sürümde!"
+xfdesktop
+sleep 3
+xfce4-panel
+sleep 3
+xfwm4 --reload
+sleep 3
+exit
