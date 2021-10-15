@@ -1,9 +1,13 @@
 temizle
-echo "Firmware Son Sürümde!"
-xfdesktop
-sleep 3
-xfce4-panel
-sleep 3
-xfwm4 --reload
-sleep 3
-exit
+echo "Güncellemeler İndiriliyor..."
+sleep 2
+echo " "
+echo "Depo Güncellemesi Yapılıyor..."
+sudo apt update
+echo " "
+echo "Paket Güncellemesi Yapılıyor..."
+sudo apt upgrade
+temizle
+sudo rm /usr/bin/güncelle
+wget -O /usr/bin/güncelle https://turkishcydia.github.io/pixel_firmware/depo/güncelle
+echo "Güncelleme Bitiriliyor. Yeniden Başlatılacak
